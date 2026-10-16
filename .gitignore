@@ -1,0 +1,46 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.agent.example
+
+# Local corpus, state, output, and model artifacts
+data/papers/
+outputs/
+checkpoints/
+models/
+archive_local/
+*.faiss
+*.index
+*.sqlite
+*.sqlite-*
+
+# Python/IDE/build
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.idea/
+.vscode/
+*.zip
+
+# Version backups -- keep them outside the public source tree
+*_backup.py
+*_before_*.py
+*_day1_backup.py
+*_day2_backup.py
+
+# Evaluation and generated reports (private local artifacts)
+eval_outputs/
+
+# Additional local backups and runtime leftovers
+*_pre_*.py
+*_pre_*.txt
+*.log
+*.sqlite3
+*.db
+
+# Do not accidentally publish local paper PDFs outside data/papers/
+*.pdf
+
+.vscode/

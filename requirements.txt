@@ -1,0 +1,9 @@
+# Python 3.11; consolidated dependencies for the validated Day 1-3 code.
+# The precise installed versions should be frozen separately before reproducibility claims.
+langgraph
+langchain-openai
+python-dotenv
+langgraph-checkpoint-sqlite
+pandas>=2.0,<3.0
+matplotlib>=3.8,<4.0
+mcp>=2,<3
